@@ -1,8 +1,12 @@
 import React from 'react';
 
-function Photo(){
+function Photo(props){
+    console.log(props.apod)
     return(
-
+        <div>
+            <img src={props.apod} alt="Space" />
+            <p></p>
+        </div>
     )
 }
 
